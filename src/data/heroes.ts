@@ -1,0 +1,350 @@
+import type { Entity } from "./types";
+
+export const heroes: Entity[] = [
+  {
+    slug: "sigurd",
+    name: "Sigurðr",
+    oldNorse: "Sigurðr Fáfnisbani",
+    pronunciation: "SIG-oorth",
+    category: "heroes",
+    kind: "The dragon-slayer — greatest hero of the North",
+    epithets: ["Fáfnisbani — Fáfnir's Bane", "Siegfried"],
+    summary:
+      "Slayer of the dragon Fáfnir, taster of its heart's blood, speaker with birds, winner and betrayer of Brynhildr — the North's greatest hero, doomed by cursed gold and a memory-potion.",
+    description: [
+      "Sigurðr was born after his father Sigmundr fell in battle against Odin himself, and raised by the smith Reginn — who reforged his father's shattered sword Gram and aimed the boy at a dragon, neglecting to mention the dragon was Reginn's brother and the errand was an inheritance dispute. From a pit dug in the dragon's track, Sigurðr drove Gram into Fáfnir's belly, and the dying monster's courteous, terrible warnings about the cursed gold changed nothing: heroes hear prophecy the way rivers hear advice.",
+      "Roasting the heart for Reginn, he burnt his thumb, tasted the blood, and understood the birds overhead — who explained that Reginn was planning his murder. Sigurðr beheaded the smith, loaded the hoard on his horse Grani (of Sleipnir's line), and rode to a fire-ringed mountain where a valkyrie slept in mail. He woke Brynhildr; they exchanged vows and, fatally, the cursed ring Andvaranaut.",
+      "At the Gjúkung court, a potion of forgetfulness erased Brynhildr from him. He married Guðrún, and — in borrowed shape — rode the flame-wall again to win Brynhildr for his brother-in-law Gunnarr, laying the naked sword Gram between them at night. When the queens quarreled at the river and the ring surfaced on the wrong hand, Brynhildr learned the truth and required his death: stabbed in bed by Gunnarr's youngest brother, Sigurðr died throwing his sword after his killer. Wagner made him Siegfried; the Norse made him the proof that the gold's curse outranks the best man alive.",
+    ],
+    facts: [
+      { label: "Great deed", value: "Slew the dragon Fáfnir with Gram" },
+      { label: "Gifts", value: "Bird-speech, from the dragon's heart-blood" },
+      { label: "Horse", value: "Grani, of Sleipnir's line" },
+      { label: "Doom", value: "The potion, the ring, and a bedroom murder" },
+    ],
+    relations: [
+      { type: "Slew", slug: "fafnir", name: "Fáfnir" },
+      { type: "Sword", slug: "gram", name: "Gram" },
+      { type: "Beloved", slug: "brynhild", name: "Brynhildr" },
+      { type: "Wife", slug: "gudrun", name: "Guðrún" },
+      { type: "The ring", slug: "andvaranaut", name: "Andvaranaut" },
+    ],
+    attestations: ["Völsunga saga", "Poetic Edda (Fáfnismál, Sigrdrífumál)", "Prose Edda (Skáldskaparmál)"],
+    tags: ["hero", "dragon", "volsungs", "sigurd"],
+  },
+  {
+    slug: "brynhild",
+    name: "Brynhildr",
+    oldNorse: "Brynhildr Buðladóttir",
+    pronunciation: "BRIN-hild",
+    category: "heroes",
+    kind: "Valkyrie and shield-maiden — the tragedy's centre",
+    epithets: ["Sigrdrífa", "Brünnhilde"],
+    summary:
+      "The valkyrie Odin punished with sleep behind a wall of fire, wakened by Sigurðr, cheated of him by a potion and a shape-trick — she ordered his death and rode his pyre.",
+    description: [
+      "Brynhildr began in Odin's service and ended it with a career-limiting act of conscience: promised victory to one king, she gave it to the younger, better man instead. The Allfather stabbed her with a sleep-thorn and decreed marriage — her terms, wrung from him, were a wall of fire only the fearless could cross. On the mountain Hindarfjall, Sigurðr crossed it, cut the mail from her, and — in Sigrdrífumál — received from her a course in rune-lore and right conduct that reads like the valkyrie's syllabus. They swore to marry; the gold ring sealed it.",
+      "The machinery of the curse then ground: Sigurðr, dosed with forgetfulness, wooed her again in Gunnarr's borrowed shape, since Gunnarr's own courage failed at the flames. She married the man she believed had crossed the fire. When Guðrún, quarrelling over precedence at the river, flashed Andvaranaut and the truth with it, Brynhildr's world inverted: the only man who ever met her terms had been the trick played on her.",
+      "Her response is the saga's cold heart: she laughed once — a sound that frightened the court — then engineered Sigurðr's murder, and told her husband afterward exactly what he had destroyed. She distributed her gold, mounted Sigurðr's pyre, and gave the North its supreme image of ruinous love: the shield-maiden burning beside the man neither fate nor forgetting could quite unmarry from her. Wagner's Brünnhilde carried her into the opera house; the original needed no music.",
+    ],
+    facts: [
+      { label: "Offence", value: "Gave Odin's promised victory to the better man" },
+      { label: "Sentence", value: "Sleep behind a wall of fire" },
+      { label: "Her terms", value: "Only the man who knows no fear" },
+      { label: "End", value: "Sigurðr's death ordered; his pyre shared" },
+    ],
+    relations: [
+      { type: "Punished by", slug: "odin", name: "Odin" },
+      { type: "Wakened by", slug: "sigurd", name: "Sigurðr" },
+      { type: "Rival", slug: "gudrun", name: "Guðrún" },
+      { type: "Husband", slug: "gunnar", name: "Gunnarr" },
+    ],
+    attestations: ["Völsunga saga", "Poetic Edda (Sigrdrífumál, Helreið Brynhildar)"],
+    tags: ["valkyrie", "tragedy", "volsungs", "fire"],
+  },
+  {
+    slug: "gudrun",
+    name: "Guðrún",
+    oldNorse: "Guðrún Gjúkadóttir",
+    pronunciation: "GOOTH-roon",
+    category: "heroes",
+    kind: "The survivor of the Völsung cycle",
+    summary:
+      "Sigurðr's widow, married off to Brynhildr's brother Atli — who killed her brothers for the gold; she served him his sons for dinner and burned his hall. The saga's longest griever and hardest avenger.",
+    description: [
+      "Guðrún got Sigurðr by her mother's potion and lost him to her brothers' knives, waking beside her murdered husband in blood. The poems give her grief its own genre: in Guðrúnarkviða she sits tearless and dangerous over the body until a wise woman bares the corpse's face — 'one tear fell,' and the court exhales, because a woman who cannot weep will do something else instead.",
+      "Something else arrived on schedule. Married against her will to Atli (legend's Attila the Hun), she watched him lure her brothers — Gunnarr and Högni — to his court for the Rhine-gold and kill them: Högni's heart cut out, Gunnarr in the snake-pit. Norse widowhood has protocols, and Guðrún observed none of them: she killed the two sons she had borne Atli, served their hearts to their father at the funeral feast, told him so at table, then knifed him in bed and burned the hall over the household. The poets do not flinch, and neither does she: 'brightly shone the fire.'",
+      "She tried to drown herself and failed — the sea carried her to a third marriage and further ruin, her daughter Svanhildr trampled by horses, her last sons dispatched to a doomed vengeance. Guðrún is what the cursed gold does to the person it doesn't kill: the cycle's designated survivor, outliving everyone she loved and everything she did about it.",
+    ],
+    facts: [
+      { label: "First husband", value: "Sigurðr — murdered by her brothers" },
+      { label: "Second", value: "Atli — served his sons, then the knife and fire" },
+      { label: "Nature", value: "The saga's great griever and its coldest avenger" },
+    ],
+    relations: [
+      { type: "Husband", slug: "sigurd", name: "Sigurðr" },
+      { type: "Brother", slug: "gunnar", name: "Gunnarr" },
+      { type: "Rival", slug: "brynhild", name: "Brynhildr" },
+    ],
+    attestations: ["Völsunga saga", "Poetic Edda (Guðrúnarkviða I–III, Atlakviða)"],
+    tags: ["volsungs", "vengeance", "grief", "atli"],
+  },
+  {
+    slug: "gunnar",
+    name: "Gunnarr",
+    oldNorse: "Gunnarr Gjúkason",
+    pronunciation: "GOON-nar",
+    category: "heroes",
+    kind: "King of the Gjúkungs — the harper in the snake-pit",
+    summary:
+      "Brynhildr's husband by fraud and Sigurðr's murderer by proxy, who redeemed a compromised life with a legendary death: refusing the gold's secret, playing the harp with his toes in Atli's snake-pit.",
+    description: [
+      "Gunnarr's part in the tragedy is a study in second-best: he could not cross Brynhildr's fire, so Sigurðr crossed it wearing his face; he could not kill Sigurðr himself — oaths — so he had his youngest brother do it; and he then wore, for years, a crown and a marriage both won by another man's courage. The sagas rate him precisely: not wicked, but persuadable, which around cursed gold amounts to the same thing.",
+      "His redemption is one of the great death-scenes of world literature. Lured with Högni to Atli's court, he refused to reveal where the Rhine-gold was sunk while his brother lived; Atli obliged with Högni's cut-out heart, at which Gunnarr laughed — 'now only I know where the gold lies, and the Rhine shall keep it.' Thrown bound into the snake-pit, he was slipped a harp and played it with his toes, charming every serpent but one until the adder found his liver. The gold stayed in the river. Doomed, complicit, and magnificent at the end: the North forgave him almost everything for the harp.",
+    ],
+    facts: [
+      { label: "Won Brynhildr", value: "By Sigurðr's borrowed shape — courage subcontracted" },
+      { label: "The secret kept", value: "The Rhine-gold's location, at the cost of everything" },
+      { label: "Death", value: "The snake-pit, harping with bound hands' toes" },
+    ],
+    relations: [
+      { type: "Wife", slug: "brynhild", name: "Brynhildr" },
+      { type: "Sister", slug: "gudrun", name: "Guðrún" },
+      { type: "Sworn brother, then victim", slug: "sigurd", name: "Sigurðr" },
+    ],
+    attestations: ["Völsunga saga", "Poetic Edda (Atlakviða)", "Oseberg cart carving (snake-pit scene)"],
+    tags: ["volsungs", "gold", "snake-pit", "harp"],
+  },
+  {
+    slug: "sigmund",
+    name: "Sigmundr",
+    oldNorse: "Sigmundr Völsungsson",
+    pronunciation: "SIG-moond",
+    category: "heroes",
+    kind: "The Völsung — drawer of Odin's sword",
+    summary:
+      "The only man who could draw Odin's sword from the tree Barnstokkr; werewolf, avenger, and father of Sigurðr — he fell when the god who armed him came to collect.",
+    description: [
+      "At his sister Signý's wedding feast, a one-eyed stranger drove a sword into the house-tree Barnstokkr and left. Every man pulled; only Sigmundr drew it, and the jealous groom, king Siggeirr, promptly slaughtered the Völsung menfolk by treachery — leaving Sigmundr, presumed dead, in the forest. What followed is the sagas at their most feral: years as an outlaw; a spell in wolf-skins with the son his sister sent him (Sinfjötli, bred by Signý on her own brother in disguise, specifically for the work of vengeance); and at last Siggeirr's hall burned with Signý choosing to walk back into the fire — vengeance complete, on her terms.",
+      "Sigmundr ruled long, buried Sinfjötli (a mysterious one-eyed ferryman took the body), and fathered his greatest son late. In his last battle, an old man with a spear and a broad hat stepped into his path; Gram shattered on Gungnir, and Sigmundr fell — declining healing with saga-fatalism: 'Odin does not wish me to draw sword again.' He ordered the shards kept for his unborn child. The god's sword, the god's collection, and the god's long game: Sigmundr's whole line is Odin breeding heroes for Ragnarök, and Sigmundr is the first to understand the terms and consent anyway.",
+    ],
+    facts: [
+      { label: "The sword", value: "Drew Gram from Barnstokkr — Odin's test" },
+      { label: "Dark years", value: "Outlawry, wolf-skins, and the vengeance with Sinfjötli" },
+      { label: "Death", value: "Gram broken on Odin's own spear" },
+    ],
+    relations: [
+      { type: "Armed and felled by", slug: "odin", name: "Odin" },
+      { type: "Sword", slug: "gram", name: "Gram" },
+      { type: "Son", slug: "sigurd", name: "Sigurðr" },
+    ],
+    attestations: ["Völsunga saga", "Poetic Edda (Frá dauða Sinfjötla)", "Beowulf (Sigemund digression)"],
+    tags: ["volsungs", "odin", "sword", "werewolf"],
+  },
+  {
+    slug: "regin",
+    name: "Reginn",
+    oldNorse: "Reginn",
+    pronunciation: "RAY-gin",
+    category: "heroes",
+    kind: "The smith who forged a hero as a weapon",
+    summary:
+      "Fáfnir's brother: the master-smith who fostered Sigurðr, reforged Gram, and aimed the boy at the dragon — planning to murder him after. The birds told on him.",
+    description: [
+      "Reginn was the third son of Hreiðmarr, cheated twice: his brother Fáfnir took the gods' gold over their father's corpse and became a dragon on it, leaving Reginn a court smith with a legal claim and no army. His solution was patient and entirely modern: acquire a promising asset young. He fostered Sigurðr, taught him, needled him about his unavenged father and missing inheritance, and forged him a sword — twice failing deliberately? the saga lets you wonder — until the boy demanded his father's shards, and Gram split the anvil.",
+      "At Gnita-heath, Reginn's coaching turned to accounting: dig a pit, stab from below — then, with Fáfnir dead, he crawled from hiding, drank the dragon's blood, and asked Sigurðr to roast the heart, calling the killing of his brother a debt the boy now owed him. The nuthatches overhead, suddenly intelligible to a hero with dragon's blood on his tongue, gave the audit: 'there sits Reginn, planning to betray the boy who trusts him.' Sigurðr weighed fostering against evidence and took the smith's head. Reginn is the cycle's essay on advisors: the man who sharpens you always knows exactly where your edges are.",
+    ],
+    facts: [
+      { label: "Craft", value: "Master smith — reforged Gram from the shards" },
+      { label: "Project", value: "Sigurðr, raised as a dragon-slaying instrument" },
+      { label: "Undone by", value: "Birds, audible through dragon's blood" },
+    ],
+    relations: [
+      { type: "Brother", slug: "fafnir", name: "Fáfnir" },
+      { type: "Foster-son and killer", slug: "sigurd", name: "Sigurðr" },
+      { type: "Masterwork", slug: "gram", name: "Gram (reforged)" },
+    ],
+    attestations: ["Völsunga saga", "Poetic Edda (Reginsmál, Fáfnismál)", "Ramsund carving"],
+    tags: ["smith", "volsungs", "betrayal", "dragon"],
+  },
+  {
+    slug: "volund",
+    name: "Völundr",
+    oldNorse: "Völundr",
+    pronunciation: "VUR-loond",
+    category: "heroes",
+    kind: "The master smith — Wayland",
+    epithets: ["Wayland the Smith", "Prince of Elves"],
+    summary:
+      "The greatest of all smiths, hamstrung and enslaved on an island by a greedy king — his revenge, wrought in his own workshop, is the darkest masterpiece in Norse poetry.",
+    description: [
+      "Völundr — England's Wayland — was a smith whose work kings coveted, called in Völundarkviða 'prince of elves.' King Níðuðr solved procurement by force: soldiers took the smith sleeping, a queen's foresight had him hamstrung — cut so he could not run — and he was installed on the island of Sævarstöð to make treasures on demand, his own sword on the king's hip and his wife's ring on the king's daughter's hand.",
+      "What Völundr forged on that island was revenge, to jeweller's tolerances. The king's two young sons came secretly, greedy for treasure: he showed them a chest, told them to come back alone and tell no one — craftsman's patience — and killed them at the second visit. Their skulls, silvered, became goblets for their father; their eyes, gems for their mother; their teeth, a brooch for their sister. The princess Böðvildr brought him her broken ring; he mended it, drugged her, and left her pregnant. Then he rose on wings he had forged — the smith who could not walk built himself flight — hovered out of reach, told Níðuðr an itemised account of everything, and flew, laughing.",
+      "The Anglo-Saxons carved the scene on the Franks Casket beside the Adoration of the Magi; 'Wayland's Smithy' still names a barrow in Oxfordshire where a horse left overnight with a coin was said to come back shod. Völundr is the craftsman-god the North actually believed in: skill as the one power that captivity cannot confiscate.",
+    ],
+    facts: [
+      { label: "Captor", value: "King Níðuðr — hamstrung, island-bound" },
+      { label: "The revenge", value: "Sons made into goblets and gems; the princess wronged" },
+      { label: "Escape", value: "On wings of his own forging" },
+    ],
+    relations: [
+      { type: "Attested beside", slug: "poetic-edda", name: "Völundarkviða, in the Poetic Edda" },
+    ],
+    attestations: ["Poetic Edda (Völundarkviða)", "Franks Casket", "Þiðreks saga"],
+    tags: ["smith", "revenge", "wayland", "elves"],
+  },
+  {
+    slug: "starkad",
+    name: "Starkaðr",
+    oldNorse: "Starkaðr",
+    pronunciation: "STARK-athr",
+    category: "heroes",
+    kind: "The cursed champion of three lifetimes",
+    summary:
+      "Odin granted him three lifetimes; Thor cursed him with a crime in each. The North's greatest and grimmest champion, doomed to outlive everyone he served and betray someone in every age.",
+    description: [
+      "Starkaðr's fate was set at a night-time court where twelve gods judged one man: Odin, who loved him, granted three life-spans, victory in every battle, the best weapons, and the gift of poetry; Thor, who hated his giant-descended line, countered clause by clause — in each life a níðingsverk, an unforgivable crime; never a son; grievous wounds in every battle; and to remember his poems no longer than he takes to speak them. Grant and curse fused into the North's longest sentence: excellence, forever, with mandatory shame.",
+      "He served kings across three ages and betrayed the ledger on schedule: hanged his own lord Víkarr in a 'mock' sacrifice that Odin's spear made real — the god collecting his fee through his favourite's hands; fled a battle in his second life; took gold to murder a king he served in his third. Saxo, who gives him a whole biography, adds the ending: old beyond old, carrying his death-money on a chain, Starkaðr paid a young man to behead him, advising him to leap between head and body at the stroke — the corpse's fall, it turned out, would have killed the boy. Even his death had a body count budgeted. He is the heroic ethic examined to destruction: what if you got everything the poems promise, and it never let you die?",
+    ],
+    facts: [
+      { label: "Odin's grants", value: "Three lifetimes, victory, weapons, poetry" },
+      { label: "Thor's riders", value: "A crime per lifetime; no sons; wounds always" },
+      { label: "Worst deed", value: "The sacrifice of his own king, Víkarr" },
+    ],
+    relations: [
+      { type: "Patron", slug: "odin", name: "Odin" },
+      { type: "Curser", slug: "thor", name: "Thor" },
+    ],
+    attestations: ["Gautreks saga", "Gesta Danorum (books VI–VIII)"],
+    tags: ["champion", "curse", "odin", "tragedy"],
+  },
+  {
+    slug: "hervor",
+    name: "Hervör",
+    oldNorse: "Hervör",
+    pronunciation: "HER-vur",
+    category: "heroes",
+    kind: "Shield-maiden — claimer of the cursed sword",
+    summary:
+      "The shield-maiden who sailed to a haunted island, stood in the grave-fires at midnight, and demanded the cursed sword Tyrfing from her dead father's ghost — and got it.",
+    description: [
+      "Raised as a bondservant's daughter and behaving, the saga notes disapprovingly, 'more like a boy than a girl,' Hervör learned her true parentage — daughter of the berserker Angantýr, who lay buried with the cursed sword Tyrfing on the haunted island of Samsø — and reacted by taking a ship. As 'Hervarðr,' in man's dress and man's name, she landed alone at dusk where her crew refused to follow: the mounds were burning with grave-fire, and the dead were awake.",
+      "The Waking of Angantýr, the poem at the saga's heart, is the greatest father-daughter scene in Old Norse: she calls him up with formal summons — 'Awake, Angantýr, Hervör wakes you' — and the draugr tries everything: denial (the sword isn't here), terror (the fires, the dead), and, at last, honesty: Tyrfing will destroy your line, daughter; it destroys everyone's. Her answer closes the negotiation: give it to me or lie shamed in your barrow forever. The dead man hands his death out through the mound-fire, with a father's blessing worded like a lament. She sailed on to raid, ruled, married, and passed the sword — and its arithmetic — to her sons, one of whom it duly ruined.",
+      "Later tradition kept the name in the family: her granddaughter Hervör died leading troops against the Huns. The first Hervör is the sagas' full answer to anyone who thinks shield-maidens were a screenwriter's invention: the North wrote her a thousand years ago, and gave her the best midnight scene in the corpus.",
+    ],
+    facts: [
+      { label: "Quest", value: "Tyrfing, from her father's haunted grave-mound" },
+      { label: "Method", value: "Alone, at night, by formal summons of the dead" },
+      { label: "Warning ignored", value: "'It will destroy your line' — it did" },
+    ],
+    relations: [
+      { type: "The sword", slug: "tyrfing", name: "Tyrfing" },
+    ],
+    attestations: ["Hervarar saga ok Heiðreks (The Waking of Angantýr)"],
+    tags: ["shield-maiden", "sword", "draugr", "courage"],
+  },
+  {
+    slug: "hrolf-kraki",
+    name: "Hrólfr Kraki",
+    oldNorse: "Hrólfr kraki",
+    pronunciation: "HROHLV KRAH-kee",
+    category: "heroes",
+    kind: "The ideal king of the North",
+    summary:
+      "Denmark's legendary Arthur: the generous, doomed king of Lejre whose twelve champions included the bear-warrior Böðvarr Bjarki, and who sowed gold on the Fyris Plains to slow an army.",
+    description: [
+      "Hrólfr Kraki sits at the centre of Northern legend the way Arthur sits in Britain's: the king whose hall at Lejre drew the twelve greatest champions of the age, chief among them Böðvarr Bjarki, who fought as a great bear while his body sat entranced — a berserker literalised. The Anglo-Saxons knew the whole family: Beowulf's Hrothgar is Hrólfr's uncle Hróarr, and the two traditions describe the same golden, doomed hall from two directions.",
+      "His most famous exploit is fiscal: escaping the Swedish king Aðils (his own treacherous stepfather-in-law) across the Fyris Plains, Hrólfr scattered the stolen gold behind him, and the pursuing army dissolved into harvesting. 'Sowing the Fyris Plains' became the skalds' standard kenning for gold-giving — generosity weaponised, the ideal king's virtue turned into a cavalry screen. Odin appears in the tale as a one-eyed farmer offering supernatural aid; Hrólfr, fatally, declines the god's gift, and the old man's door closes on the dynasty's luck.",
+      "The end is the genre's finest last stand: his sister's husband came at Yule with an army hidden in wagons, and the champions fell one by one in the burning hall — Bjarki's bear vanishing the moment his body was roused to ordinary fighting. The saga's epitaph is the Norse kingship ideal entire: gold given freely, loyalty repaid to the last fire, and no surrender clause anywhere in the text.",
+    ],
+    facts: [
+      { label: "Court", value: "Lejre, with twelve peerless champions" },
+      { label: "Famous stratagem", value: "Sowing the Fyris Plains with gold" },
+      { label: "Beowulf link", value: "His uncle is Hrothgar of Heorot" },
+      { label: "End", value: "The burning of the hall at Yule" },
+    ],
+    relations: [
+      { type: "Spurned", slug: "odin", name: "Odin, disguised" },
+    ],
+    attestations: ["Hrólfs saga kraka", "Gesta Danorum", "Beowulf (as Hrothulf)", "Skáldskaparmál"],
+    tags: ["king", "denmark", "champions", "beowulf"],
+  },
+  {
+    slug: "ragnar-lothbrok",
+    name: "Ragnarr Loðbrók",
+    oldNorse: "Ragnarr loðbrók",
+    pronunciation: "RAG-nar LOTH-brohk",
+    category: "heroes",
+    kind: "The legendary Viking — 'Hairy-Breeches'",
+    summary:
+      "The semi-legendary Viking king who slew a serpent in boiled-pitch trousers, married the dragon-slayer's daughter, and died in a snake-pit laughing: 'how the little pigs will grunt when they hear how the old boar died.'",
+    description: [
+      "Ragnarr earned the least glamorous epithet in heroic literature — loðbrók, 'Hairy-Breeches' — by engineering: to win the princess Þóra, penned in by a venomous serpent her father had unwisely let grow, he boiled his trousers in pitch and rolled them in sand, and the snake's strike met aggregate. The sagas then marry him, magnificently, into the deeper legend: his second wife Áslaug is revealed as the daughter of Sigurðr and Brynhildr — the Völsung bloodline smuggled into the Viking Age, and their sons' strange gifts (Sigurðr Snake-in-the-Eye carried the dragon-mark in his iris) explained by pedigree.",
+      "Those sons — Ívarr the Boneless, Björn Ironside, Sigurðr, Ubba — outgrew him, which the saga makes his motive: raiding England undermanned rather than be out-famed, Ragnarr was captured by king Ælla of Northumbria and thrown into a snake-pit. His death-song became the genre's summit: identifying himself in riddles, itemising a life of battles, and closing with the most quoted line in Viking literature — 'the little pigs would grunt if they knew the old boar's fate.' They grunted: the Great Heathen Army of 865, history's actual invasion of England, sails in the sagas as his sons' revenge, and Ælla dies under the blood-eagle.",
+      "A historical Ragnarr flickers behind the legend — a Reginheri raided Paris in 845 — but the saga figure is a composite the North built as its ideal Viking: cunning over strength, dynasty over survival, and a death scene rehearsed until it doubled as a will. Modern television has made him the most famous Norseman alive, which the old boar would have regarded as no more than his due.",
+    ],
+    facts: [
+      { label: "Epithet", value: "'Hairy-Breeches' — pitch-boiled anti-serpent trousers" },
+      { label: "Wives", value: "Þóra; then Áslaug, daughter of Sigurðr and Brynhildr" },
+      { label: "Sons", value: "Ívarr the Boneless, Björn Ironside, and the Great Heathen Army's leaders" },
+      { label: "Death", value: "Ælla's snake-pit, singing" },
+    ],
+    relations: [
+      { type: "Wife's parents", slug: "sigurd", name: "Sigurðr and Brynhildr" },
+      { type: "Wife", slug: "lagertha", name: "Lagertha (in Saxo)" },
+    ],
+    attestations: ["Ragnars saga loðbrókar", "Krákumál", "Gesta Danorum (book IX)", "Anglo-Saxon Chronicle (the sons)"],
+    tags: ["viking", "snake-pit", "england", "dynasty"],
+  },
+  {
+    slug: "lagertha",
+    name: "Lagertha",
+    oldNorse: "Hlaðgerðr",
+    pronunciation: "la-GER-tha",
+    category: "heroes",
+    kind: "Shield-maiden — Ragnarr's first wife",
+    summary:
+      "Saxo's shield-maiden: she fought at the front 'with the courage of a man,' won Ragnarr's siege of her heart via a bear and a hound, and later saved his life in battle — after divorcing him.",
+    description: [
+      "Lagertha enters Saxo Grammaticus's ninth book fighting: when the Swedish king Frø killed the Norwegian king Siward and forced the royal women into a brothel, the women who escaped went to war dressed as men, and at their head fought one 'with a man's courage, her hair loose over her shoulders' — the detail by which the astonished army discovered her sex. Ragnarr, come to avenge his grandfather, credited her with the victory.",
+      "His courtship met due diligence: Lagertha set a bear and a hound to guard her door, and Saxo — no admirer of warrior women, which makes his testimony the better — records that Ragnarr speared the bear, throttled the hound, and won a wife on those merits. The marriage produced children and ended in divorce (Ragnarr, Saxo sniffs, never quite trusted the animals incident), but the alliance outlasted it: when civil war cornered her ex-husband, Lagertha arrived with a hundred and twenty ships, turned the battle with a counter-attack, and — in Saxo's most Lagertha sentence — went home and killed her interfering second husband with a spearhead hidden in her gown, 'preferring to rule without a partner.'",
+      "She may be a euhemerised echo of the giantess-valkyrie tradition, or a memory of the armed women whose graves — like the Birka warrior, confirmed female by DNA in 2017 — keep complicating the textbooks. Television made her a global figure; Saxo's original needed twelve sentences and no help.",
+    ],
+    facts: [
+      { label: "Debut", value: "Fighting in the front line, hair loose, courage 'of a man'" },
+      { label: "Courtship security", value: "A bear and a hound at the door" },
+      { label: "Finest hour", value: "120 ships to rescue the man she'd divorced" },
+    ],
+    relations: [
+      { type: "Husband (divorced, rescued)", slug: "ragnar-lothbrok", name: "Ragnarr Loðbrók" },
+    ],
+    attestations: ["Gesta Danorum (book IX)", "cf. the Birka female warrior grave (Bj 581)"],
+    tags: ["shield-maiden", "saxo", "warrior-women"],
+  },
+  {
+    slug: "amleth",
+    name: "Amleth",
+    oldNorse: "Amlóði",
+    pronunciation: "AM-leth",
+    category: "heroes",
+    kind: "The avenging prince — Hamlet's original",
+    summary:
+      "The Danish prince who feigned idiocy to survive his uncle's fratricide, passed every test of his madness, and burned the court at its own feast — four centuries before Shakespeare borrowed him.",
+    description: [
+      "The plot is familiar because it conquered the world twice: Amleth's uncle Fengi kills his brother — Amleth's father — marries the widow, and rules. The boy's problem is arithmetic: an heir with a grievance is a corpse on schedule. His solution is the North's strangest heroic performance — professional idiocy. He sits in the ashes carving wooden hooks ('barbs for my father's avenger,' he answers, truthfully, when asked; madmen may say anything), crows like a rooster, and rides to meetings facing his horse's tail, while the court runs tests: a girl planted to seduce the act away, a spy under the queen's bedstraw — whom Amleth kills, dismembers, and feeds to the pigs, still in character.",
+      "Shipped to England with two escorts and a runic death-warrant, he edits the letter in their sleep: execute the bearers, marry the prince to your daughter. He returns to Denmark mid-funeral — his own — gets the court ceremonially drunk, nets the hall down over them with the hooks he had been carving all along in plain sight, and burns it; Fengi he kills with the man's own sword, having politely swapped it for his sword-nailed-in-sheath. Saxo gives him a triumphant speech and a king's career after; the story travelled through a French collection to a certain playwright, who kept the uncle, the mother, the feigned madness, the spy behind the arras, and the edited letter, and changed mainly the ending's efficiency.",
+      "Amlóði surfaces first in a skaldic kenning — the sea as 'Amlóði's mill' grinding sand — suggesting the mad-prince tale is older than any surviving text. The North's contribution to world literature's most famous character: the insight that in a court where telling the truth is fatal, a man who tells it as a joke, from the ashes, in plain sight, is invisible.",
+    ],
+    facts: [
+      { label: "Strategy", value: "Feigned madness — truth told as jokes, hooks carved in plain sight" },
+      { label: "The letter", value: "Runic death-warrant, edited in his escorts' sleep" },
+      { label: "The reckoning", value: "The hall netted, hooked, and burned at his 'funeral' feast" },
+      { label: "Descendant", value: "Shakespeare's Hamlet, via Saxo and Belleforest" },
+    ],
+    relations: [
+      { type: "Recorded by", slug: "gesta-danorum", name: "Gesta Danorum" },
+    ],
+    attestations: ["Gesta Danorum (books III–IV)", "Snæbjörn's kenning (10th c.)"],
+    tags: ["hamlet", "revenge", "denmark", "cunning"],
+  },
+];

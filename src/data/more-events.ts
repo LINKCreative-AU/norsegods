@@ -1,0 +1,278 @@
+import type { Entity } from "./types";
+
+export const moreEvents: Entity[] = [
+  {
+    slug: "theft-of-mjolnir",
+    name: "The Theft of Mjölnir",
+    oldNorse: "Þrymskviða",
+    category: "events",
+    kind: "The bridal-veil heist",
+    summary:
+      "Thor wakes to find his hammer stolen and the ransom is Freyja's hand — so the mightiest god goes to the wedding as the bride. The funniest poem in the Edda, with a body count.",
+    description: [
+      "Thor woke, reached for Mjölnir, and found nothing: 'his beard bristled, his hair stood on end.' Loki, in Freyja's falcon cloak, flew to Jötunheimr and got the terms from king Þrymr: the hammer lies eight leagues deep, and the price is Freyja as bride. Freyja's response snapped the Brísingamen from her neck — she would not, and the gods believed her.",
+      "Heimdallr proposed the unthinkable: dress Thor as the bride. The thunder-god's objections about his dignity were answered by Loki with the poem's coldest line — 'the giants will live in Asgard, if you don't fetch your hammer.' So: bridal linen, keys at the belt, Brísingamen on the god's chest, Loki as sharp-tongued maid. At the feast the bride ate an ox, eight salmon, and three casks of mead; her eyes through the veil burned like fire; and Loki smoothed each alarm — she has not eaten or slept for eight nights, so wild was her longing for Jötunheimr. Þrymr, moved, called for Mjölnir to hallow the bride on her lap.",
+      "The poem's last stanzas are pure percussion: Thor's heart 'laughed in his breast' as his hand closed on the shaft, Þrymr died first, and the giant's whole household followed — including the old sister who had begged a bridal gift. She got, the poet notes, a hammer-blow instead of rings. And so Odin's son got his hammer back.",
+    ],
+    facts: [
+      { label: "The theft", value: "Mjölnir, buried eight leagues deep by Þrymr" },
+      { label: "The ransom", value: "Freyja — refused, necklace-snappingly" },
+      { label: "The plan", value: "Thor veiled as the bride, Loki as bridesmaid" },
+      { label: "Source", value: "Þrymskviða — the Edda's comic masterpiece" },
+    ],
+    relations: [
+      { type: "The bride", slug: "thor", name: "Thor" },
+      { type: "The bridesmaid", slug: "loki", name: "Loki" },
+      { type: "The groom", slug: "thrym", name: "Þrymr" },
+      { type: "The poem", slug: "thrymskvida", name: "Þrymskviða" },
+    ],
+    attestations: ["Poetic Edda (Þrymskviða)"],
+    tags: ["mjolnir", "comedy", "disguise", "thor"],
+  },
+  {
+    slug: "thors-fishing-trip",
+    name: "Thor's Fishing Trip",
+    oldNorse: "Hymiskviða",
+    category: "events",
+    kind: "The day the apocalypse got hooked",
+    summary:
+      "Thor rows out with the giant Hymir, baits a hook with an ox-head, and pulls the Midgard Serpent itself to the gunwale — the most-carved scene in Norse art.",
+    description: [
+      "Guesting with the giant Hymir and eating him out of house and home, Thor was told to earn his supper: they would fish. He 'borrowed' bait by tearing the head off Hymir's largest ox, then rowed them so far past the whale-grounds that the giant went pale — he knew what lives out there.",
+      "Thor lined the ox-head onto a hook and dropped it, 'and the Midgard Serpent gaped at the bait.' What followed is the mythology's supreme freeze-frame: the god hauling, feet braced so hard they went through the boat's bottom to the sea-floor; the serpent's venom-spitting head breaking the surface; god and world-monster eye to eye — 'and it has been said, no one has seen a more terrifying sight' — the hammer rising for a blow that would have ended the Ragnarök problem centuries early. Hymir, in terror, cut the line. The serpent sank; Thor knocked the giant overboard (says Snorri) and waded home.",
+      "The scene was the ancient world's favourite: it survives carved on stones in Sweden, Denmark, and England — the Altuna stone even includes Thor's foot through the hull. Theologians of the conversion era loved it too: God baiting a hook for the world-serpent was an image both religions could argue about.",
+    ],
+    facts: [
+      { label: "Bait", value: "The head of Hymir's best ox" },
+      { label: "Catch", value: "Jörmungandr, the Midgard Serpent" },
+      { label: "Spoiled by", value: "Hymir cutting the line" },
+      { label: "In art", value: "Altuna, Hørdum, and Gosforth stones" },
+    ],
+    relations: [
+      { type: "Fisherman", slug: "thor", name: "Thor" },
+      { type: "The catch", slug: "jormungandr", name: "Jörmungandr" },
+      { type: "Boat-owner", slug: "hymir", name: "Hymir" },
+    ],
+    attestations: ["Poetic Edda (Hymiskviða)", "Prose Edda (Gylfaginning)", "picture stones"],
+    tags: ["thor", "serpent", "fishing", "art"],
+  },
+  {
+    slug: "journey-to-utgard",
+    name: "Thor's Journey to Útgarðr",
+    oldNorse: "För Þórs til Útgarða",
+    category: "events",
+    kind: "The contest of illusions",
+    summary:
+      "Thor and Loki's expedition to the giant-king's castle, where every contest is rigged with cosmic stand-ins — the myths' great comedy of perception, and Snorri's best sustained story.",
+    description: [
+      "It begins with goats and a farm-boy's marrow-theft, collects Þjálfi and Röskva as Thor's servants, and detours through a night in a 'hall' that dawn reveals as the thumb of a giant's glove — the giant, Skrýmir, snores like earthquakes, ties the provision-bag with wire no god can undo, and receives three of Thor's best hammer-blows as 'a leaf,' 'an acorn,' and 'some bird droppings' falling on him. The party arrives at Útgarðr already thoroughly gaslit.",
+      "The giant-king's rule: no one stays who cannot beat someone at something. Loki loses an eating race to Logi; Þjálfi is outrun three heats by Hugi; Thor fails to drain a drinking horn in three world-record pulls, cannot lift the king's grey cat past one paw, and is wrestled to a knee by the crone Elli. The gods leave humiliated — and at the gates, Útgarða-Loki, suddenly respectful, decrypts the scoreboard: Logi was wildfire, Hugi was thought, the horn's far end was the ocean (behold the tides you made), the cat was Jörmungandr (all Midgard trembled when you lifted it), and Elli was Old Age, who takes everyone. The three hammer-blows? Look at those three square valleys in yonder mountain. Thor swung — and castle, king, and plain were gone.",
+      "It is the one myth where Thor's problem cannot be hit, and the poets clearly loved that: strength meets epistemology and loses on points. Every later story of rigged carnival games against unbeatable abstractions is playing in this castle.",
+    ],
+    facts: [
+      { label: "The contests", value: "Eating, running, drinking, cat-lifting, wrestling" },
+      { label: "The stand-ins", value: "Wildfire, Thought, the Ocean, the Serpent, Old Age" },
+      { label: "The verdict", value: "Illusion beats strength — once" },
+    ],
+    relations: [
+      { type: "Champion", slug: "thor", name: "Thor" },
+      { type: "The illusionist", slug: "utgarda-loki", name: "Útgarða-Loki" },
+      { type: "The unbeatable crone", slug: "elli", name: "Elli" },
+    ],
+    attestations: ["Prose Edda (Gylfaginning)"],
+    tags: ["thor", "illusion", "contest", "comedy"],
+  },
+  {
+    slug: "building-of-asgards-wall",
+    name: "The Building of Asgard's Wall",
+    oldNorse: "Borgarsmíðin",
+    category: "events",
+    kind: "The contract the gods never meant to honour",
+    summary:
+      "A lone builder offers to wall Asgard in one winter for the sun, the moon, and Freyja. The gods take the bet on Loki's advice — and when the work runs on schedule, they change the terms.",
+    description: [
+      "After the Æsir–Vanir war left Asgard's defences broken, a builder appeared with an offer: a wall no giant could breach, built in three half-years, price — Freyja, plus the sun and the moon. On Loki's counsel the gods countered with impossible terms: one winter, no help but his stallion. The builder agreed, and the gods swore oaths of safe-conduct. Then they watched the stallion Svaðilfari haul night-time stone at twice a horse's work, and the wall rise on schedule, and understood that they had gambled the sky's lights and the goddess of love on a labour estimate.",
+      "Three days from the deadline, the gods convened — not to pay, but to establish whose advice this had been. Loki, offered the choice between dying and voiding the contract, chose creatively: a mare in season broke from the woods that evening, and Svaðilfari's productivity ended. The builder flew into a giant's rage — revealing what the safe-conduct oaths had been protecting — 'and the oaths were disregarded': Thor's hammer arrived, and the builder's skull went 'in small crumbs.' Loki's absence concluded eleven months later with an eight-legged foal, Sleipnir, delivered to Odin as, presumably, an apology.",
+      "Völuspá treats the oath-breaking as a hinge of history: the seeress cites it in the ledger of guilt that ends at Ragnarök. The wall stood; the gods' word did not; the mythology counts the second cost as higher.",
+    ],
+    facts: [
+      { label: "The price", value: "Freyja, the sun, and the moon" },
+      { label: "The terms", value: "One winter, one horse — Loki's idea" },
+      { label: "The default", value: "A mare, a missed deadline, a hammer" },
+      { label: "The by-product", value: "Sleipnir" },
+    ],
+    relations: [
+      { type: "Fixer and mare", slug: "loki", name: "Loki" },
+      { type: "The stallion", slug: "svadilfari", name: "Svaðilfari" },
+      { type: "Enforcement", slug: "thor", name: "Thor" },
+      { type: "The foal", slug: "sleipnir", name: "Sleipnir" },
+    ],
+    attestations: ["Prose Edda (Gylfaginning)", "Poetic Edda (Völuspá)"],
+    tags: ["asgard", "oath", "loki", "wall"],
+  },
+  {
+    slug: "flyting-of-loki",
+    name: "The Flyting of Loki",
+    oldNorse: "Lokasenna",
+    category: "events",
+    kind: "The night Loki roasted every god",
+    summary:
+      "Loki crashes the gods' feast and insults every deity in turn — cowardice, adultery, unmanly magic — and the terrible part is that most of it is true. Only the mention of Thor ends it.",
+    description: [
+      "At Ægir's ale-feast, where enchanted horns fill themselves and the peace is sacred, Loki killed a servant for being praised, was thrown out, and came back in — invoking an old blood-oath with Odin that no ale be poured unless poured for both. Seated by right, he began at one end of the hall and worked down: Bragi is a bench-ornament afraid of battle; Odin practised seiðr 'like a witch' — perversion; Frigg took her husband's brothers to bed; Freyja has slept with every god and elf in the room including her brother; Týr can't hold a shield since the wolf took his hand — 'and my son Fenrir did it.' Goddess after god rises to object and is handed their own police file.",
+      "The horror engine of Lokasenna is accuracy: nearly every slander is attested elsewhere in the mythology. Loki is the pantheon's memory weaponised, the guest who says what everyone in the room knows. Only one name works: when Sif is reached, thunder arrives, and Thor's four verses — each ending 'Hush, unmanly creature' with hammer raised — accomplish what no argument could. Loki leaves with a parting shot of pure prophecy: Ægir will never brew again; fire will take everything.",
+      "The prose coda gets him caught: a salmon in a waterfall, netted by his own invention, bound with his son's entrails under dripping venom. The feast's seating chart, in other words, becomes Ragnarök's order of battle.",
+    ],
+    facts: [
+      { label: "Venue", value: "Ægir's sacred ale-feast" },
+      { label: "Method", value: "Flyting — formal insult-exchange, with receipts" },
+      { label: "Only effective rebuttal", value: "Thor, hammer raised" },
+      { label: "Consequence", value: "The binding of Loki" },
+    ],
+    relations: [
+      { type: "The prosecutor", slug: "loki", name: "Loki" },
+      { type: "Host", slug: "aegir", name: "Ægir" },
+      { type: "The silencer", slug: "thor", name: "Thor" },
+      { type: "Led to", slug: "binding-of-loki", name: "The Binding of Loki" },
+    ],
+    attestations: ["Poetic Edda (Lokasenna)"],
+    tags: ["loki", "insults", "feast", "flyting"],
+  },
+  {
+    slug: "odins-sacrifice",
+    name: "Odin's Sacrifice on the Tree",
+    oldNorse: "Rúnatal",
+    category: "events",
+    kind: "The self-hanging that won the runes",
+    summary:
+      "Nine nights Odin hung on the windy tree, wounded by his own spear, given to himself — starving, screaming, and finally seizing the runes from the depths. The core mystery of the Norse religion.",
+    description: [
+      "The account is Odin's own voice, in Hávamál's Rúnatal: 'I know that I hung on the windy tree nine long nights, wounded with a spear, given to Odin — myself to myself — on that tree of which no one knows from what roots it rises.' No bread, no horn; he peered downward; 'I took up the runes, screaming I took them, and fell back from there.' Then the floodgates: nine mighty songs from his mother's kin, a drink of the precious mead, and word growing from word, work from work.",
+      "Every clause is a theology. The tree is Yggdrasil — whose very name means 'Odin's horse,' the gallows he rode. The spear is his own Gungnir; sacrifices to Odin were hanged and speared, and here the god performs his own cult on himself, as both priest and offering. And the runes are not invented but seized — pre-existing in the deep, waiting for someone to pay enough. Wisdom in this religion has a fixed exchange rate: an eye at the well, a hanging for the runes, and no discounts for gods.",
+      "Comparisons have hung on this passage for centuries — a god on a tree, pierced, thirsting, who descends and returns with salvation-knowledge — and scholars still argue about Christian influence versus shamanic initiation ordeal. The poem itself is untroubled: it files the event under education.",
+    ],
+    facts: [
+      { label: "Duration", value: "Nine nights, without bread or horn" },
+      { label: "The wound", value: "His own spear, Gungnir" },
+      { label: "Dedicated to", value: "'Odin, myself to myself'" },
+      { label: "The prize", value: "The runes — seized, screaming" },
+    ],
+    relations: [
+      { type: "The sacrifice", slug: "odin", name: "Odin" },
+      { type: "The gallows", slug: "yggdrasil", name: "Yggdrasil" },
+      { type: "The prize", slug: "runes", name: "The Runes" },
+      { type: "The poem", slug: "havamal", name: "Hávamál" },
+    ],
+    attestations: ["Poetic Edda (Hávamál, Rúnatal)"],
+    tags: ["odin", "sacrifice", "runes", "mystery"],
+  },
+  {
+    slug: "askr-and-embla",
+    name: "The Making of Askr and Embla",
+    oldNorse: "Askr ok Embla",
+    category: "events",
+    kind: "The creation of humankind",
+    summary:
+      "Three gods walking the new shore found two trees, 'capable of little, fateless' — and gave them breath, mind, and warmth. Every human is driftwood the gods stopped to finish.",
+    description: [
+      "After the world was built but before it had witnesses, three gods walked the beach — Odin, Hœnir, and Lóðurr in Völuspá's version; Odin, Vili, and Vé in Snorri's — and found two trees, or two pieces of driftwood: Askr ('Ash') and Embla (perhaps 'Elm', perhaps 'Vine'). The poem's description of pre-human material is oddly tender: 'they had no breath, no spirit, no warmth, no voice, no good looks; fateless they were.'",
+      "Each god gave what he was: Odin breathed önd, breath-spirit-life; Hœnir gave óðr, mind and feeling — inspiration, the very substance of Odin's own name; Lóðurr gave lá and litr goðr, warmth of blood and the bloom of living colour. Fatelessness ended immediately: to be alive, in this cosmology, is to be assigned a thread at the norns' well. From these two, the whole of humankind descends, dwelling in Midgard behind the wall of Ymir's eyebrows.",
+      "Humans made from trees is very old northern furniture — and the myth never quite left the language: Old Norse poetry routinely calls men 'ash of battle' and women 'birch of gold.' Wood that breathes: the skalds took the creation story as a standing invoice, and paid it in kennings for a thousand years.",
+    ],
+    facts: [
+      { label: "Raw material", value: "Two trees on the shore — Ash and Embla" },
+      { label: "The gifts", value: "Breath (Odin), mind (Hœnir), warmth and colour (Lóðurr)" },
+      { label: "Descendants", value: "Everyone" },
+    ],
+    relations: [
+      { type: "Breath-giver", slug: "odin", name: "Odin" },
+      { type: "Mind-giver", slug: "hoenir", name: "Hœnir" },
+      { type: "Their home", slug: "midgard", name: "Midgard" },
+    ],
+    attestations: ["Poetic Edda (Völuspá)", "Prose Edda (Gylfaginning)"],
+    tags: ["creation", "humans", "trees"],
+  },
+  {
+    slug: "duel-with-hrungnir",
+    name: "The Duel with Hrungnir",
+    oldNorse: "Hólmganga Þórs",
+    category: "events",
+    kind: "The first formal duel",
+    summary:
+      "Myth's first scheduled duel: Thor versus the stone-headed strongest of giants, a clay decoy with a mare's heart, a whetstone shattered in mid-air — and a shard in Thor's skull forever.",
+    description: [
+      "Odin started it, as usual: a horse-race wager led drunk, boastful Hrungnir into Asgard, where his threats — drink all the ale, sink the hall, kill the gods, take Freyja and Sif — exhausted hospitality, and Thor was named. But the giant was a guest and unarmed; even Thor may not kill at the table. So the myths' first hólmganga was scheduled: appointed ground at Grjótúnagarðar, seconds allowed, terms formal. The giants, realising their champion was fighting for the species' honour, built a second: Mökkurkálfi, a clay man nine leagues tall — with a mare's heart, the only one big enough. It failed at first sight of Thor.",
+      "Hrungnir stood ready with stone shield and whetstone — until Thor's second, Þjálfi, jogged up with disinformation: the god would attack from below, through the earth. The giant stood on his shield. Thor arrived by sky, in lightning. Hammer and hurled whetstone met mid-air: the whetstone split, half burying itself in Thor's head; Mjölnir proceeded to shatter the giant's stone skull. Þjálfi, meanwhile, felled the clay colossus, which 'fell with little glory.' The giant's leg pinned Thor's neck, immovable until his three-year-old son Magni tossed it off, earning the horse Gullfaxi and Odin's lasting resentment about prize allocation.",
+      "The whetstone shard never came out. A sorceress named Gróa nearly sang it free until Thor, delighted, told her prematurely that her lost husband was on his way home — she forgot her spells, and the stone settled in for eternity. Hence the taboo the myth ends on: never throw a whetstone across a floor, for the shard in Thor's head stirs.",
+    ],
+    facts: [
+      { label: "Occasion", value: "The first formal duel (hólmganga)" },
+      { label: "The decoy", value: "Mökkurkálfi — clay, nine leagues, mare's heart" },
+      { label: "Exchange", value: "Whetstone vs Mjölnir, mid-air" },
+      { label: "Souvenir", value: "A whetstone shard in Thor's skull, permanent" },
+    ],
+    relations: [
+      { type: "Champion", slug: "thor", name: "Thor" },
+      { type: "Challenger", slug: "hrungnir", name: "Hrungnir" },
+      { type: "Leg-lifter", slug: "magni-and-modi", name: "Magni" },
+    ],
+    attestations: ["Prose Edda (Skáldskaparmál)", "Haustlöng"],
+    tags: ["duel", "thor", "giant", "whetstone"],
+  },
+  {
+    slug: "otters-ransom",
+    name: "The Otter's Ransom",
+    oldNorse: "Otrgjöld",
+    category: "events",
+    kind: "The gold that started the Völsung tragedy",
+    summary:
+      "Loki kills an otter that was a magician's son, and the gods must fill and cover the skin with gold — extorted from Andvari, cursed on delivery, and fatal to everyone downstream.",
+    description: [
+      "Odin, Hœnir, and Loki, travelling, came to a waterfall where an otter dozed over a salmon. Loki, in the mythology's most consequential act of idle violence, killed it with a stone — 'proud that he had got an otter and a salmon in one throw.' That night they sought lodging with the magician Hreiðmarr, and showed off the bag. The otter was his son, Otr, who fished in that shape. The gods woke bound, and the weregild was set: fill the otter's skin with gold, then cover it outside until no whisker shows.",
+      "Loki was unleashed to fundraise, and did it in character: with Rán's net he seized the dwarf Andvari from his pike-shape and took the hoard — including, over the dwarf's one desperate objection, the gold-breeding ring Andvaranaut. Andvari cursed ring and hoard to destroy all owners; Loki, magnificently, relayed the curse along with the payment. The skin was filled and covered — one whisker showed, and Odin surrendered the ring he'd fancied to cover it. Curse delivered, in full, with interest.",
+      "Hreiðmarr's son Fáfnir killed him within days and became a dragon on the pile; his other son Reginn spent a generation grooming the hero Sigurðr as a murder weapon; and the gold rolled on through the Völsungs collecting corpses until it sank in the Rhine. Three gods skipping stones at an otter: the entire northern tragic cycle, invoiced from one afternoon.",
+    ],
+    facts: [
+      { label: "The offence", value: "Loki's casual killing of Otr" },
+      { label: "The weregild", value: "The otter-skin filled and covered in gold" },
+      { label: "The funding", value: "Andvari's hoard — curse included" },
+      { label: "Downstream", value: "Fáfnir, Sigurðr, the fall of the Völsungs" },
+    ],
+    relations: [
+      { type: "The killer", slug: "loki", name: "Loki" },
+      { type: "The source", slug: "andvari", name: "Andvari" },
+      { type: "The ring", slug: "andvaranaut", name: "Andvaranaut" },
+      { type: "The dragon it made", slug: "fafnir", name: "Fáfnir" },
+    ],
+    attestations: ["Poetic Edda (Reginsmál)", "Völsunga saga", "Prose Edda (Skáldskaparmál)"],
+    tags: ["gold", "curse", "loki", "volsungs"],
+  },
+  {
+    slug: "binding-of-loki",
+    name: "The Binding of Loki",
+    oldNorse: "Loki bundinn",
+    category: "events",
+    kind: "The gods' vengeance",
+    summary:
+      "After Baldr's death and the feast of insults, the gods hunt Loki to a mountain hideout, net him from a salmon's shape, and bind him under dripping venom with his own son's entrails — until Ragnarök.",
+    description: [
+      "Loki knew he had finally spent the gods' patience — after Baldr's death, after Þökk's dry eyes, after the feast where he read the pantheon its charges — and he ran: a house on a mountain with doors on all four sides, and days spent as a salmon in the falls of Fránangr. Idle by the fire, he invented the fishing net, then burned it when he saw the gods coming — but Kvasir (in this account the wisest of the Æsir) read the net's shape in the ashes. His own cleverness, reverse-engineered, caught him: netted on the third pass, gripped by Thor at the tail, which is why salmon taper.",
+      "There is no trial. The gods take him to a cave; his son Váli is turned into a wolf who tears his brother Narfi apart; Narfi's entrails, hardened to iron, bind Loki to three stones — one under his shoulders, one under his loins, one under his knees. Skaði — settling all her family's accounts at once — fixes a venom-dripping serpent above his face. Sigyn stays. She holds the bowl; when she empties it, the drops strike, and the earth quakes.",
+      "The Eddas do not pretend this is justice: it is what remains when justice is no longer the point, and Völuspá lists the bound god among the sights on the road to doom. He lies there now, as the sources have it, until he 'breaks free at Ragnarök' — steering the nail-ship, meeting Heimdallr, closing the circle the mistletoe opened.",
+    ],
+    facts: [
+      { label: "Caught by", value: "His own invention — the fishing net" },
+      { label: "Bound with", value: "His son Narfi's entrails, turned iron" },
+      { label: "The venom", value: "Skaði's serpent; Sigyn's bowl between" },
+      { label: "Until", value: "Ragnarök" },
+    ],
+    relations: [
+      { type: "The bound", slug: "loki", name: "Loki" },
+      { type: "The faithful", slug: "sigyn", name: "Sigyn" },
+      { type: "The serpent-setter", slug: "skadi", name: "Skaði" },
+      { type: "The sons", slug: "narfi-and-vali-lokason", name: "Narfi and Váli" },
+    ],
+    attestations: ["Prose Edda (Gylfaginning)", "Poetic Edda (Lokasenna prose, Völuspá)"],
+    tags: ["loki", "punishment", "binding", "ragnarok"],
+  },
+];
