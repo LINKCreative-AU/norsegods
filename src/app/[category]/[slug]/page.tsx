@@ -5,6 +5,7 @@ import { allEntities, getCategory, getEntity } from "@/data";
 import type { Entity } from "@/data";
 import EntityCard from "@/components/EntityCard";
 import { SITE_URL } from "@/lib/site";
+import { getArticle } from "@/lib/article";
 
 /** Related entries: tag overlap first, then same-category neighbours. */
 function relatedEntities(entity: Entity, count = 3): Entity[] {
@@ -58,6 +59,7 @@ export default async function EntityPage({ params }: Props) {
   if (!entity || entity.category !== category) notFound();
   const catMeta = getCategory(entity.category)!;
   const url = `${SITE_URL}/${entity.category}/${entity.slug}`;
+  const article = getArticle(entity.category, entity.slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -76,6 +78,19 @@ export default async function EntityPage({ params }: Props) {
     },
     keywords: (entity.tags ?? []).join(", "),
   };
+
+  const faqJsonLd =
+    article && article.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: article.faq.map((f) => ({
+            "@type": "Question",
+            name: f.question,
+            acceptedAnswer: { "@type": "Answer", text: f.answer },
+          })),
+        }
+      : null;
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -97,6 +112,12 @@ export default async function EntityPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <nav className="breadcrumbs" aria-label="Breadcrumb">
         <Link href="/">Home</Link> ᛫ <Link href={`/${catMeta.slug}`}>{catMeta.title}</Link> ᛫{" "}
         {entity.name}
@@ -126,11 +147,31 @@ export default async function EntityPage({ params }: Props) {
 
       <div className="entity-layout">
         <article className="entity-body">
-          {entity.description.map((p, i) => (
-            <p key={i} className={i === 0 ? "lede-p" : undefined}>
-              {p}
-            </p>
-          ))}
+          {article ? (
+            <>
+              <div
+                className="article-prose"
+                dangerouslySetInnerHTML={{ __html: article.html }}
+              />
+              {article.faq.length > 0 && (
+                <section className="article-faq">
+                  <h2 id="faq">Frequently asked questions</h2>
+                  {article.faq.map((f) => (
+                    <details key={f.question} className="faq-item">
+                      <summary>{f.question}</summary>
+                      <p>{f.answer}</p>
+                    </details>
+                  ))}
+                </section>
+              )}
+            </>
+          ) : (
+            entity.description.map((p, i) => (
+              <p key={i} className={i === 0 ? "lede-p" : undefined}>
+                {p}
+              </p>
+            ))
+          )}
         </article>
 
         <aside>

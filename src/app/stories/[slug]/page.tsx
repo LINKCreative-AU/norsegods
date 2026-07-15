@@ -56,12 +56,32 @@ export default async function StoryPage({ params }: Props) {
     story.audioUrl ??
     (existsSync(join(process.cwd(), "public", generatedAudio)) ? generatedAudio : undefined);
 
+  const audioJsonLd = audioUrl
+    ? {
+        "@context": "https://schema.org",
+        "@type": "AudioObject",
+        name: `${story.title} — narrated Norse bedtime story`,
+        description: story.subtitle,
+        contentUrl: `${SITE_URL}${audioUrl.startsWith("/") ? audioUrl : `/${audioUrl}`}`,
+        duration: `PT${story.minutes}M`,
+        encodingFormat: "audio/mpeg",
+        inLanguage: "en",
+        isPartOf: { "@type": "WebPage", url: `${SITE_URL}/stories/${story.slug}` },
+      }
+    : null;
+
   return (
     <div className="container">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {audioJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(audioJsonLd) }}
+        />
+      )}
       <nav className="breadcrumbs" aria-label="Breadcrumb">
         <Link href="/">Home</Link> ᛫ <Link href="/stories">Bedtime Stories</Link> ᛫ {story.title}
       </nav>
