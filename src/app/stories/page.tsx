@@ -8,6 +8,13 @@ export const metadata: Metadata = {
   description:
     "The great Norse myths retold as bedtime stories — the making of the world, Thor's stolen hammer, Odin at the well of wisdom — each with a built-in read-aloud voice.",
   alternates: { canonical: `${SITE_URL}/stories` },
+  openGraph: {
+    title: "Norse Bedtime Stories — Myths Told Softly, With Narration",
+    description:
+      "The great Norse myths retold as bedtime stories, each with a built-in read-aloud voice.",
+    url: `${SITE_URL}/stories`,
+    type: "website",
+  },
 };
 
 export default function StoriesPage() {
