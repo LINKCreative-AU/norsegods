@@ -51,7 +51,7 @@ And Odin bent over his son and whispered something in his ear before the fire to
 
 ## The ride to Hel, and the price of all tears
 
-Frigg asked who among the Æsir would earn all her love by riding to [Hel](/realms/hel) to offer a ransom. Hermóðr, called the Bold, Odin's son, took Sleipnir and rode nine nights through valleys so dark and deep he saw nothing, over the river Gjöll on its gold-thatched bridge — where the maiden Móðguðr remarked that he made more noise alone than five troops of dead men the day before, and that he had the wrong color for a corpse — and leapt Sleipnir clean over Hel's gate.
+Frigg asked who among the Æsir would earn all her love by riding to [Hel](/realms/helheim) to offer a ransom. Hermóðr, called the Bold, Odin's son, took Sleipnir and rode nine nights through valleys so dark and deep he saw nothing, over the river Gjöll on its gold-thatched bridge — where the maiden Móðguðr remarked that he made more noise alone than five troops of dead men the day before, and that he had the wrong color for a corpse — and leapt Sleipnir clean over Hel's gate.
 
 He found Baldr enthroned in the hall of the dead, sat with him through the night, and in the morning put the plea: all the gods weeping, would Hel let him ride home? Her answer is one of the mythology's coldest and fairest lines: it should now be *tested*, she said, whether Baldr was as loved as everyone claimed. If everything in the world, alive and dead, would weep for him, he could return. If anything spoke against him or refused to weep, he would stay.
 

@@ -17,7 +17,7 @@ The boar, the cook, and the kettle all share the element -hrímnir, 'the sooty o
 
 ## The kitchen of Valhalla
 
-[Valhalla](/realms/valhalla) is a hall with a staggering headcount. [Odin](/gods/odin) gathers to it every warrior worth having who falls in battle, against the day he will need an army at [Ragnarök](/events/ragnarok); Grímnismál counts five hundred and forty doors, each wide enough for eight hundred einherjar to march out abreast. Gylfaginning's questioner, Gangleri, does the arithmetic every listener does, and asks the practical question: that is "a very mighty multitude" — what do they all eat?
+[Valhalla](/concepts/valhalla) is a hall with a staggering headcount. [Odin](/gods/odin) gathers to it every warrior worth having who falls in battle, against the day he will need an army at [Ragnarök](/events/ragnarok); Grímnismál counts five hundred and forty doors, each wide enough for eight hundred einherjar to march out abreast. Gylfaginning's questioner, Gangleri, does the arithmetic every listener does, and asks the practical question: that is "a very mighty multitude" — what do they all eat?
 
 The answer is a single pig. Every day Andhrímnir, the cook of the gods, seethes the boar Sæhrímnir in the cauldron Eldhrímnir, and there is always enough; every evening the boar stands whole again, ready for tomorrow's slaughter. Grímnismál compresses the whole system into one stanza — cook, kettle, boar, "best of pork" — and then appends the sly line that has delighted readers ever since: "but few know what the einherjar feed on." The poem winks: it is telling a secret, and the secret is a kitchen. High, in Snorri's retelling, allows himself the same dry note — few are wise enough to tell of it truly.
 
