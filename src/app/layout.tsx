@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, EB_Garamond } from "next/font/google";
 import Link from "next/link";
+import Script from "next/script";
 import { allEntities, categories, getCategory } from "@/data";
 import type { CategorySlug } from "@/data";
 import { SITE_URL } from "@/lib/site";
@@ -175,6 +176,19 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </footer>
+        {/* Google Analytics (gtag.js) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PF4PDVMGBS"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PF4PDVMGBS');
+          `}
+        </Script>
       </body>
     </html>
   );
