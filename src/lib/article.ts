@@ -105,13 +105,8 @@ function parseFaq(md: string): FaqItem[] {
   return items;
 }
 
-/**
- * Load the long-form article for an entity from content/<category>/<slug>.md.
- * Returns null when no article exists, in which case pages fall back to the
- * entity's built-in description paragraphs.
- */
-export function getArticle(category: CategorySlug, slug: string): Article | null {
-  const path = join(process.cwd(), "content", category, `${slug}.md`);
+/** Parse a content markdown file at an absolute path into an Article. */
+function loadArticle(path: string): Article | null {
   if (!existsSync(path)) return null;
   const rawFile = readFileSync(path, "utf8");
   const m = rawFile.match(/^---\n[\s\S]*?\n---\n([\s\S]*)$/);
@@ -128,4 +123,18 @@ export function getArticle(category: CategorySlug, slug: string): Article | null
     faq,
     wordCount: main.split(/\s+/).length,
   };
+}
+
+/**
+ * Load the long-form article for an entity from content/<category>/<slug>.md.
+ * Returns null when no article exists, in which case pages fall back to the
+ * entity's built-in description paragraphs.
+ */
+export function getArticle(category: CategorySlug, slug: string): Article | null {
+  return loadArticle(join(process.cwd(), "content", category, `${slug}.md`));
+}
+
+/** Load a standalone guide article from content/guides/<slug>.md. */
+export function getGuide(slug: string): Article | null {
+  return loadArticle(join(process.cwd(), "content", "guides", `${slug}.md`));
 }

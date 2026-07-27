@@ -82,6 +82,9 @@ export default function SiteNav({ wanderPaths }: { wanderPaths: string[] }) {
           </div>
         );
       })}
+      <Link href="/guides" className="nav-link">
+        Guides
+      </Link>
       <Link href="/texts" className="nav-link">
         Sources
       </Link>
