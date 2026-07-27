@@ -2,18 +2,11 @@ import type { Metadata } from "next";
 import { Cinzel, EB_Garamond } from "next/font/google";
 import Link from "next/link";
 import Script from "next/script";
-import { allEntities, categories, getCategory } from "@/data";
-import type { CategorySlug } from "@/data";
+import { allEntities, categories } from "@/data";
 import { SITE_URL } from "@/lib/site";
 import BindRune from "@/components/BindRune";
-import WanderButton from "@/components/WanderButton";
+import SiteNav from "@/components/SiteNav";
 import "./globals.css";
-
-const NAV_GROUPS: { label: string; slugs: CategorySlug[] }[] = [
-  { label: "Beings", slugs: ["gods", "giants", "creatures"] },
-  { label: "Cosmos", slugs: ["realms", "concepts"] },
-  { label: "Lore", slugs: ["events", "heroes", "artifacts"] },
-];
 
 const display = Cinzel({
   subsets: ["latin"],
@@ -97,35 +90,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
               NORSE GODS<span className="tld">.org</span>
             </Link>
-            <nav className="site-nav" aria-label="Categories">
-              {NAV_GROUPS.map((group) => (
-                <div key={group.label} className="nav-group">
-                  <button className="nav-trigger" type="button" aria-haspopup="true">
-                    {group.label} <span className="caret">▾</span>
-                  </button>
-                  <div className="nav-menu">
-                    {group.slugs.map((slug) => {
-                      const c = getCategory(slug)!;
-                      return (
-                        <Link key={slug} href={`/${slug}`}>
-                          <span className="menu-rune">{c.rune}</span> {c.title}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                </div>
-              ))}
-              <Link href="/texts" className="nav-link">
-                Sources
-              </Link>
-              <Link href="/stories" className="nav-link">
-                ☾ Stories
-              </Link>
-              <Link href="/search" className="nav-link nav-search">
-                ⌕ Search
-              </Link>
-              <WanderButton paths={allEntities.map((e) => `/${e.category}/${e.slug}`)} />
-            </nav>
+            <SiteNav wanderPaths={allEntities.map((e) => `/${e.category}/${e.slug}`)} />
           </div>
         </header>
         <main>{children}</main>

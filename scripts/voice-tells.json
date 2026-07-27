@@ -1,0 +1,38 @@
+{
+  "comment": "Human-voice rule for all norsegods.org automated copy — same standard as RenoGuide's voice_tells.json, tuned for mythology writing. Every bot that writes entries or stories must pass scripts/voice-lint.ts before deploying. Never weaken these lists to get a draft through; redraft instead.",
+  "phrases": [
+    "rich tapestry", "a testament to", "testament to the", "stands as a",
+    "serves as a reminder", "serves as a symbol", "plays a crucial role",
+    "plays a pivotal role", "plays a significant role", "cannot be overstated",
+    "it is important to note", "it's important to note", "it is worth noting",
+    "in the annals of", "shrouded in mystery", "steeped in mystery",
+    "continues to captivate", "continues to fascinate", "continues to inspire",
+    "captures the imagination", "captured the imagination", "enduring legacy",
+    "indelible mark", "the fabric of", "weaves together", "delve into",
+    "dive into", "let's explore", "in conclusion", "in summary",
+    "offers a glimpse", "provides a glimpse", "a window into", "sheds light on",
+    "underscores the", "highlights the importance", "one of the most iconic",
+    "an iconic figure", "a fascinating figure", "an enigmatic figure",
+    "a complex figure", "few figures are as", "no discussion of",
+    "one cannot help but", "whether you're a", "whether you are a",
+    "from ancient times to", "throughout history", "the mists of time",
+    "lost to time", "the sands of time", "stood the test of time",
+    "holds a special place", "central to understanding", "a key figure in",
+    "remains relevant today", "still resonates", "modern audiences",
+    "popular culture today", "look no further", "in today's", "game-changer",
+    "embodies the", "the embodiment of", "personifies the very"
+  ],
+  "words": [
+    "delve", "delves", "multifaceted", "enigmatic", "captivating",
+    "iconic", "pivotal", "seamlessly", "furthermore", "moreover",
+    "additionally", "quintessential", "epitomizes", "underscores",
+    "tapestry", "unleash", "unleashed", "showcases", "showcasing",
+    "boasts", "nestled", "effortlessly", "intriguing", "intricacies"
+  ],
+  "superlatives": [
+    "stunning", "gorgeous", "amazing", "incredible", "spectacular",
+    "marvellous", "marvelous", "fabulous", "awesome", "outstanding",
+    "exceptional", "extraordinary", "dazzling", "sensational",
+    "magnificent", "breathtaking", "awe-inspiring"
+  ]
+}

@@ -11,7 +11,7 @@ export const moreGiants: Entity[] = [
     summary:
       "The giant-king who stole Thor's hammer and demanded Freyja as ransom — and got Thor in a bridal veil instead, briefly.",
     description: [
-      "Þrymr, 'lord of the þursar,' sat plaiting gold collars for his hounds when Loki came asking after Thor's stolen hammer. He admitted it cheerfully: buried eight leagues deep, and the price is Freyja as his bride. He had prepared for the wedding of his dreams — gold-horned cattle, jewels, everything, he boasts, but Freyja.",
+      "Þrymr, 'lord of the þursar,' sat plaiting gold collars for his hounds when Loki came asking after Thor's stolen hammer. He admitted it cheerfully: buried eight leagues deep, and the price is Freyja as his bride. He had prepared for the wedding of his dreams — gold-horned cattle, jewels, everything, he crows, but Freyja.",
       "What arrived was Thor, veiled and bridal, with Loki as bridesmaid. Þrymr wondered at a bride who ate an ox and eight salmon and whose eyes burned like fire — Loki explained she had not eaten or slept for eight nights of longing — and, satisfied, called for the hammer to hallow the bride. It was laid in 'her' lap, and Þrymskviða ends in one of literature's great massacres-at-a-wedding.",
     ],
     facts: [

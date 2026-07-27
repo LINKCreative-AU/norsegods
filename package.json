@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "narrate": "tsx scripts/narrate.ts"
+    "narrate": "tsx scripts/narrate.ts",
+    "voice-lint": "tsx scripts/voice-lint.ts"
   },
   "dependencies": {
     "next": "^15.3.4",

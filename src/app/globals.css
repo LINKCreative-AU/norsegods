@@ -130,7 +130,7 @@ h1, h2, h3, h4 {
 
 .nav-link:hover,
 .nav-trigger:hover,
-.nav-group:focus-within .nav-trigger {
+.nav-trigger[aria-expanded="true"] {
   color: var(--gold-bright);
   background: var(--bg-raised);
   text-decoration: none;
@@ -164,8 +164,7 @@ h1, h2, h3, h4 {
   z-index: 60;
 }
 
-.nav-group:hover .nav-menu,
-.nav-group:focus-within .nav-menu {
+.nav-menu.open {
   display: block;
 }
 

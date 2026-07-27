@@ -185,10 +185,10 @@ export const realms: Entity[] = [
     kind: "Realm of the dwarves",
     epithets: ["Niðavellir — the Dark Fields"],
     summary:
-      "The underground world of the dwarves — master-smiths born as maggots in Ymir's flesh, who forged every great treasure the gods own.",
+      "The underground world of the dwarves: master-smiths born as maggots in Ymir's flesh, who forged every great treasure the gods own.",
     description: [
-      "Beneath the earth lie the Dark Fields — Niðavellir in Völuspá, Svartálfaheimr in Snorri — where the dwarves keep their forges. The dwarves began as maggots in the flesh of the dead giant Ymir, and the gods gave them wit and shape; four of them — Norðri, Suðri, Austri, Vestri — were set to hold up the sky itself at its corners.",
-      "Everything irreplaceable in the mythology comes out of their smithies: Mjölnir, Gungnir, Draupnir, Skíðblaðnir, Sif's golden hair, Freyja's Brísingamen, the ribbon Gleipnir that binds Fenrir, and the Mead of Poetry brewed from Kvasir's blood. The gods rarely pay honestly for any of it — Loki's head-wager, coerced bindings, a stolen ring — and the cursed gold of Andvari, extorted in this realm, flows on into the tragedy of the Völsungs. Dwarves turn to stone in sunlight, and dealing with them in their darkness always carries a price.",
+      "Beneath the earth lie the Dark Fields, Niðavellir in Völuspá and Svartálfaheimr in Snorri, where the dwarves keep their forges. The dwarves began as maggots in the flesh of the dead giant Ymir, and the gods gave them wit and shape; four of them (Norðri, Suðri, Austri, Vestri) were set to hold up the sky itself at its corners.",
+      "Everything irreplaceable in the mythology comes out of their smithies: Mjölnir, Gungnir, Draupnir, Skíðblaðnir, Sif's golden hair, Freyja's Brísingamen, the ribbon Gleipnir that binds Fenrir, and the Mead of Poetry brewed from Kvasir's blood. The gods rarely pay honestly for any of it: Loki's head-wager, coerced bindings, a stolen ring. The cursed gold of Andvari, extorted in this realm, flows on into the tragedy of the Völsungs. Dwarves turn to stone in sunlight, and dealing with them in their darkness always carries a price.",
     ],
     facts: [
       { label: "Inhabitants", value: "The dwarves (dvergar)" },

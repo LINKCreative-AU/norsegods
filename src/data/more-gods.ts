@@ -60,7 +60,7 @@ export const moreGods: Entity[] = [
     category: "gods",
     kind: "Æsir god — Odin's silent companion",
     summary:
-      "The enigmatic god who helped give the first humans their wits, was traded as a hostage to the Vanir — and proved useless without Mímir to whisper in his ear.",
+      "The puzzle among the gods: he helped give the first humans their wits, was traded as a hostage to the Vanir — and proved useless without Mímir to whisper in his ear.",
     description: [
       "Hœnir appears wherever Odin travels in a trio: at the making of humankind (where some sources say he gave Askr and Embla their reason), and on the road with Odin and Loki in the myths that begin with a stolen otter and end with cursed gold. Tall, handsome, and kingly to look at, he was sent to the Vanir as a peace-hostage — a prestigious gift.",
       "The Vanir soon learned his secret: at the assembly, whenever Mímir was not beside him, Hœnir answered every question with 'let others decide.' Feeling swindled, they beheaded Mímir and sent the head back to Odin. Yet Hœnir outlasts the joke: in Völuspá's vision of the world after Ragnarök, it is Hœnir who 'chooses the lot-twigs' — the quiet god finally reading fate himself.",
@@ -395,5 +395,68 @@ export const moreGods: Entity[] = [
     ],
     attestations: ["Prose Edda (Gylfaginning)", "Poetic Edda (Völuspá, Lokasenna)"],
     tags: ["creation", "brothers", "ymir"],
+  },
+  {
+    slug: "sol-and-mani",
+    name: "Sól and Máni",
+    oldNorse: "Sól ok Máni",
+    pronunciation: "SOHL, MAW-nee",
+    category: "gods",
+    kind: "Sun-goddess and moon-god",
+    summary:
+      "A sister who drives the sun and a brother who steers the moon, set in the sky to answer their father's vanity and hunted across it every day by wolves.",
+    description: [
+      "Their father Mundilfari had two children so bright that he named the girl Sól, after the sun, and the boy Máni, after the moon. The gods heard arrogance in that and answered it with work. They set Sól to drive the two horses that pull the sun, Árvakr ('Early-waker') and Alsviðr ('Very-swift'), and to keep them from scorching she carries a shield called Svalinn ('Cooler') before the heat. Snorri adds a homely engineering detail: under the horses' shoulders the gods fixed bellows of iron to cool them on the road.",
+      "Máni governs the moon and reckons its waxing and waning. Grímnismál tells how he once lifted two children, Bil and Hjúki, off the earth as they carried a water-pail home from the well Byrgir, and Scandinavians long claimed to see the pair in the dark patches of the full moon. He rides the same sky as his sister and under the same threat.",
+      "Neither travels for pleasure. The wolves of the Ironwood run the chase, Sköll behind the sun and Hati before the moon, and the reason the two ride so hard is that they are prey. At Ragnarök the wolves close their jaws and the sky goes dark for the last battle. Vafþrúðnismál keeps back one line against that dark: before the wolf takes her, Sól bears a daughter as fair as herself, and it is the daughter who will drive her mother's road when a new world rises from the sea.",
+    ],
+    facts: [
+      { label: "Father", value: "Mundilfari, who named them for sun and moon" },
+      { label: "Sól's team", value: "Horses Árvakr and Alsviðr; the shield Svalinn" },
+      { label: "Máni's charges", value: "Bil and Hjúki, the children seen in the moon" },
+      { label: "At Ragnarök", value: "Swallowed by wolves; Sól's daughter takes the reins" },
+    ],
+    relations: [
+      { type: "Father", name: "Mundilfari" },
+      { type: "Pursued by", slug: "skoll-and-hati", name: "Sköll and Hati" },
+      { type: "Ended at", slug: "ragnarok", name: "Ragnarök" },
+    ],
+    attestations: ["Poetic Edda (Vafþrúðnismál, Grímnismál)", "Prose Edda (Gylfaginning)"],
+    tags: ["sun", "moon", "cosmology", "ragnarok"],
+  },
+  {
+    slug: "rindr",
+    name: "Rindr",
+    oldNorse: "Rindr",
+    pronunciation: "RIND-r",
+    category: "gods",
+    kind: "Goddess, mother of Váli",
+    epithets: ["Rinda"],
+    summary:
+      "Reckoned among the goddesses by Snorri, Rindr is remembered for one grim purpose: she bore Váli to Odin, the one-night-old avenger of Baldr. Every source that tells how Odin won her agrees he took her against her will.",
+    description: [
+      "In Baldrs draumar, Odin rides down to the gates of Hel and wakes a dead seeress to ask who will avenge Baldr. Her answer names Rindr. In the western halls, Vestrsalir, Rindr will bear a son, and that son will kill Höðr when he is one night old, refusing to wash his hands or comb his hair until he has carried Baldr's slayer to the pyre. Rindr enters the myth this way, as a womb prophesied before the child inside it has a father.",
+      "Snorri counts Rindr among the Ásynjur in Gylfaginning, but the older skalds knew a harder story. Kormákr Ögmundarson, writing in the 10th century, compressed it to three words: seið Yggr til Rindar, 'Odin worked seiðr to get Rindr.' Saxo Grammaticus later spelled out what the magic did. In his telling she is Rinda, a princess of the Ruthenians, and Odin wants her only for the son the seers have promised him. She turns him down twice. So he scratches runes onto a strip of bark, touches her with it, and drives her mad, then returns disguised as a healing-woman called Wecha. The cure will be violent, he warns; on his advice the king has his raving daughter bound to her bed. Then Odin rapes her.",
+      "From that came Bous, Saxo's version of Váli, who struck down Höðr and died of his own wounds the day after, a vengeance that killed the avenger too. The episode throws a cold light on Odin. Here the Allfather is a rapist working by fraud and spellcraft, and medieval Christian writers pointed to it as proof the old gods deserved no worship. The name kept its charge in verse: a poet could call Odin 'Rindr's foe' or Váli 'Rindr's son,' and the audience would feel the whole story tighten behind the kenning.",
+    ],
+    facts: [
+      { label: "Role", value: "Mother of Váli, who avenges Baldr" },
+      { label: "Status", value: "Listed among the Ásynjur by Snorri; a human princess (Rinda) in Saxo" },
+      { label: "Won by", value: "Seiðr in the skalds; runes, disguise, and rape in Saxo" },
+      { label: "Her son", value: "Slew Höðr at one night old, then died of his wounds" },
+    ],
+    relations: [
+      { type: "Son", slug: "vali", name: "Váli" },
+      { type: "Son by", slug: "odin", name: "Odin" },
+      { type: "Avenged", slug: "baldr", name: "Baldr" },
+      { type: "Prophesied in", slug: "baldrs-draumar", name: "Baldrs draumar" },
+    ],
+    attestations: [
+      "Poetic Edda (Baldrs draumar)",
+      "Prose Edda (Gylfaginning, Skáldskaparmál)",
+      "Kormákr Ögmundarson, Sigurðardrápa",
+      "Saxo Grammaticus, Gesta Danorum (Book III)",
+    ],
+    tags: ["goddess", "vali", "baldr", "vengeance", "odin"],
   },
 ];

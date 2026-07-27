@@ -158,10 +158,10 @@ export const moreTexts: Entity[] = [
     category: "texts",
     kind: "'Baldr's Dreams' — the necromantic prologue",
     summary:
-      "The short, cold poem where Odin rides to Hel's gate, wakes a dead seeress against her will, and interrogates her about his son's nightmares — learning the whole disaster in advance.",
+      "The short, cold poem where Odin rides to Hel's gate, wakes a dead seeress against her will, and interrogates her about his son's nightmares, learning the whole disaster in advance.",
     description: [
-      "Baldr has been dreaming his death, and the gods convene — then Odin saddles Sleipnir and rides down the Hel-road alone, past the blood-chested hound, to a seeress's grave east of the door. The poem is fourteen stanzas of necromancy procedural: he chants the corpse-waking spells, and the völva rises complaining — 'snowed on with snow, beaten with rain, soaked with dew; long was I dead' — and answers because compelled, each answer ending 'unwilling I told you; now I will be silent.'",
-      "The answers are the Baldr myth in brutal miniature: the benches of Hel are decked and the mead brewed — for Baldr; Höðr will throw; Váli, unborn, will avenge at one night old. Then the poem's famous ending: Odin asks one question too strange — about maidens weeping and throwing veils to the sky — and the seeress recognises her interrogator: 'You are not the man you claimed; you are Odin.' His retort names her mother of three monsters; she closes the interview with the last word of the dead everywhere: ride home proud, for no one will wake me again 'until Loki slips his bonds.' Foreknowledge, the poem's cold gift: Odin gets everything he asked for, and it helps nothing.",
+      "Baldr has been dreaming his death, and the gods convene. Then Odin saddles Sleipnir and rides down the Hel-road alone, past the blood-chested hound, to a seeress's grave east of the door. The poem is fourteen stanzas of necromancy procedural: he chants the corpse-waking spells, and the völva rises complaining ('snowed on with snow, beaten with rain, soaked with dew; long was I dead'), answering only because compelled, each answer ending 'unwilling I told you; now I will be silent.'",
+      "The answers are the Baldr myth in brutal miniature: the benches of Hel are decked and the mead brewed, all of it for Baldr; Höðr will throw; Váli, unborn, will avenge at one night old. Then the poem's famous ending: Odin asks one question too strange, about maidens weeping and throwing veils to the sky, and the seeress recognises her interrogator: 'You are not the man you claimed; you are Odin.' His retort names her mother of three monsters; she closes the interview with the last word of the dead everywhere: ride home proud, for no one will wake me again 'until Loki slips his bonds.' Foreknowledge, the poem's cold gift: Odin gets everything he asked for, and it helps nothing.",
     ],
     facts: [
       { label: "Method", value: "Corpse-waking spells at a grave by Hel's gate" },
@@ -183,15 +183,15 @@ export const moreTexts: Entity[] = [
     category: "texts",
     kind: "'The List of Ríg' — the origin of the social classes",
     summary:
-      "The god Heimdallr, travelling as 'Ríg', fathers the three estates of society — thrall, farmer, and noble — in three farmhouse beds. Norse sociology as a bedroom farce with a straight face.",
+      "The god Heimdallr, travelling as 'Ríg', fathers the three estates of society (thrall, farmer, and noble) in three farmhouse beds. Norse sociology as a bedroom farce with a straight face.",
     description: [
-      "A god calling himself Ríg walks the green roads of the young world and lodges at three houses in ascending order of prosperity. At each he shares the couple's bed for three nights, and nine months later the households are enriched: Great-grandmother bears Þræll (Thrall), black-haired and lumpy-knuckled, whose children's names are a catalogue of insults (Stumpy, Stinker, Lump) and whose lot is dung-spreading and goat-herding; Grandmother bears Karl (Freeman), the red-cheeked farmer whose kin build houses and drive ploughs; Mother bears Jarl (Earl), blond and snake-eyed, who from childhood knows shield, spear, and — when Ríg returns to claim him — runes and inheritance.",
-      "The prose header identifies Ríg as Heimdallr, which lights up Völuspá's opening address to 'the sons of Heimdallr' — all humanity, high and low, as the watchman's children. The poem ends mid-story with Jarl's son Konr ungr — 'young Konr,' a pun on konungr, king — out-riddling his father in rune-lore as a crow incites him to conquest; the page breaks off there, monarchy arriving just as the manuscript fails. Read straight, it is class ideology with divine warranty; read slant, it is the North explaining, with a completely straight face, that aristocracy is what happens when a god sleeps over.",
+      "A god calling himself Ríg walks the green roads of the young world and lodges at three houses in ascending order of prosperity. At each he shares the couple's bed for three nights, and nine months later the households are enriched: Great-grandmother bears Þræll (Thrall), black-haired and lumpy-knuckled, whose children's names are a catalogue of insults (Stumpy, Stinker, Lump) and whose lot is dung-spreading and goat-herding; Grandmother bears Karl (Freeman), the red-cheeked farmer whose kin build houses and drive ploughs; Mother bears Jarl (Earl), blond and snake-eyed, who from childhood handles shield and spear, and, when Ríg returns to claim him, learns runes and inheritance.",
+      "The prose header identifies Ríg as Heimdallr, which lights up Völuspá's opening address to 'the sons of Heimdallr': all humanity, high and low, as the watchman's children. The poem ends mid-story with Jarl's son Konr ungr ('young Konr,' a pun on konungr, king) out-riddling his father in rune-lore as a crow incites him to conquest, and the page breaks off there, monarchy arriving just as the manuscript fails. Read straight, it is class ideology with divine warranty; read slant, it is the North explaining, with a completely straight face, that aristocracy is what happens when a god sleeps over.",
     ],
     facts: [
-      { label: "The traveller", value: "Ríg — identified as Heimdallr" },
-      { label: "The three sons", value: "Þræll, Karl, and Jarl — the social classes" },
-      { label: "Ends with", value: "Konr ungr — 'king', mid-pun, mid-page" },
+      { label: "The traveller", value: "Ríg, identified as Heimdallr" },
+      { label: "The three sons", value: "Þræll, Karl, and Jarl: the social classes" },
+      { label: "Ends with", value: "Konr ungr ('king'), mid-pun, mid-page" },
     ],
     relations: [
       { type: "The god", slug: "heimdall", name: "Heimdallr" },

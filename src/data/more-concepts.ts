@@ -320,4 +320,33 @@ export const moreConcepts: Entity[] = [
     attestations: ["Poetic Edda (Völuspá, Hávamál)", "the sagas throughout"],
     tags: ["fate", "wyrd", "philosophy", "norns"],
   },
+  {
+    slug: "berserkers",
+    name: "Berserkers",
+    oldNorse: "berserkr",
+    pronunciation: "BER-serk-r",
+    category: "concepts",
+    kind: "Odin's frenzy-warriors",
+    summary:
+      "'Bear-shirt' warriors who fought in a trance of fury, biting their shield-rims and feeling neither fire nor iron — Odin's shock troops, and later a public menace the law set out to stamp out.",
+    description: [
+      "The name most likely joins bjǫrn, 'bear,' to serkr, 'shirt': a man who fought wearing the animal's skin, and something of its nature. Snorri Sturluson read the first syllable instead as berr, 'bare,' and pictured warriors who threw off their mail; most scholars now back the bear. In his Ynglinga saga he gives the classic portrait of the state. Odin's men went without armor, 'mad as dogs or wolves,' biting the rims of their shields, strong as bears, and neither fire nor iron bit back. The Norse called the fit berserksgangr, the going-berserk.",
+      "The berserker had a wolfish cousin, the úlfheðnar, 'wolf-coats,' and the oldest surviving mention of either comes straight off a battlefield. In Haraldskvæði, composed around 900 by the skald Þórbjörn Hornklofi, King Harald Fairhair's wolf-coats howl and shake their iron at Hafrsfjǫrðr, the sea-fight of about 872 where Harald broke his rivals and made himself king of Norway. These were no lone lunatics. The poet counts them a recognizable unit, the king's picked front rank, among his most trusted men.",
+      "There was a bill to pay. The sagas say the fury drained off into days of weakness, the body wrecked by whatever had passed through it. As kings consolidated and Christianity spread, the berserker slid from elite warrior to thug, the stock villain who bullies farmers and demands their daughters, exactly the sort Grettir the Strong cuts down in a night's work in Norway. Iceland's law code, Grágás, made going berserk a crime punishable by outlawry, and Norway had banned it by about 1015. The bearskin that once marched at a king's shoulder ended as a clause in a statute book.",
+    ],
+    facts: [
+      { label: "Old Norse", value: "berserkr, 'bear-shirt' (plural berserkir)" },
+      { label: "The fury", value: "berserksgangr, the 'going-berserk'" },
+      { label: "Wolf-cousin", value: "úlfheðnar, warriors in wolf-skins" },
+      { label: "First named", value: "Haraldskvæði, at Hafrsfjǫrðr, c. 872" },
+      { label: "End", value: "Outlawed in Iceland's Grágás; banned in Norway c. 1015" },
+    ],
+    relations: [
+      { type: "Patron", slug: "odin", name: "Odin" },
+      { type: "Kin in spirit", slug: "einherjar", name: "The Einherjar" },
+      { type: "Wolf-cousin", name: "Úlfheðnar" },
+    ],
+    attestations: ["Heimskringla (Ynglinga saga)", "Haraldskvæði (Hrafnsmál)", "Grettis saga", "Grágás (Icelandic law code)"],
+    tags: ["warriors", "odin", "battle", "berserker"],
+  },
 ];
